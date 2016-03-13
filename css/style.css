@@ -1600,13 +1600,19 @@
     } 
     
     #main {
-        margin-left: 20%;
+        margin: 5%;
+        width: 100%;
+        margin-top: 25px;
     } 
      
     .line_bio {
         width: 0%;
     } 
     
+    #image_bio {
+        width: 0;
+    }
+
     #image_bio img {
         display: none;
     }
