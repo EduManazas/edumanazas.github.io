@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Edu Manazas</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Edu Manazas es un artista de nuevo circo que trabaja los malabares desde el movimiento y la danza. Aqu&iacute; puedes encontrar fotos y v&iacute;deos de su trabajo." />
+        <meta name="keywords" content="edu, manazas, circus, circo, juggling, malabares, alodeya, 3, tercios, tres, dance, danza" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/jquery.shuffle-images.js"></script>
+        <noscript>
+                <link rel="stylesheet" href="css/skel.css" />
+                <link rel="stylesheet" href="css/style.css" />
+                <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <script src="js/lightbox.min.js"></script>
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+        <script type="text/javascript" src="js/camera.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <script src="js/sorting.js" type="text/javascript"></script>
+        <script src="js/jquery.isotope.js" type="text/javascript"></script>
+        <script>
+                    show_pictures = function() {
+                        $('#pictures').show();
+                        $('#camera_icon').css( "color", "white" );
+                        $('#video_edu').hide();
+                        $('#camera_video_icon').css( "color", "#282828" );
+                    }
+
+                    show_videos = function() {
+                        $('#pictures').hide();
+                        $('#camera_icon').css( "color", "#282828" );
+                        $('#video_edu').show();
+                        $('#camera_video_icon').css( "color", "white" );
+                    }
+                    
+                    show_all = function() {
+                        $(".alodeya").fadeIn("3500");
+                        $(".tercios").fadeIn("3500");
+                        $(".manazas").fadeIn("3500");
+                        $(".others").fadeIn("3500");
+                    }
+
+                    show_alodeya = function() {
+                        $(".tercios").fadeOut("3500");
+                        $(".manazas").fadeOut("3500");
+                        $(".others").fadeOut("3500");
+                        $(".alodeya").fadeIn("3500");
+                        /*$('.alodeya').show();
+                        $('.tercios').hide();
+                        $('.manazas').hide();
+                        $('.others').hide();*/
+                    }
+                    
+                    show_tercios = function() {
+                        $(".alodeya").fadeOut("3500");
+                        $(".manazas").fadeOut("3500");
+                        $(".others").fadeOut("3500");
+                        $(".tercios").fadeIn("3500");
+                     }
+
+                    show_manazas = function() {
+                        $(".alodeya").fadeOut("3500");
+                        $(".tercios").fadeOut("3500");
+                        $(".others").fadeOut("3500");
+                        $(".manazas").fadeIn("3500");
+                     }
+
+                    show_others = function() {
+                        $(".alodeya").fadeOut("3500");
+                        $(".tercios").fadeOut("3500");
+                        $(".manazas").fadeOut("3500");
+                        $(".others").fadeIn("3500");
+                     }
+                </script>
+        </script>
+     </head>
+    <body>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="container">
+                <li><a id="edu_nav" href="index.html">Edu</a></li>
+                <li><a id="bio_nav" href="bio.html" >Bio</a></li>
+                <li><a id="shows_nav" href="shows.html" >Shows</a></li>
+                <li><a id="multimedia_nav" href="multimedia.html" class="active" >Multimedia</a></li>
+                <li><a id="calendar_nav"  href="calendar.html" >Calendar</a></li>
+                <li><a id="contact_nav" href="#contact" >Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Multimedia -->
+        <div class="wrapper style4">
+            <article class="container 90%">
+                    <div class="row">
+                        <div class="12u">
+                            <header id="choose_mult">
+                                    <h2 id="camera_icon" class="icon fa-camera circled" onclick="show_pictures()" style="color: white;" ><span class="label">Photos</span></h2> 
+                                    <h2 id="camera_video_icon" class="icon fa-video-camera circled" onclick="show_videos()"><span class="label">Videos</span></h2>
+                            </header>
+                            <!-- Photos -->
+                                
+                            <section id="pictures">
+                                <div id="options" class="col-md-12" style="text-align: center;">	
+					<ul id="filter" class="option-set" data-option-key="filter">
+						<li><a class="selected" href="" onclick="show_all()">Todas</a></li>
+						<li><a href="" onclick="show_manazas()">Edu Manazas</a></li>
+						<li><a href="" onclick="show_alodeya()">Alodey&aacute;</a></li>
+						<li><a href="" onclick="show_tercios()">3 Tercios</a></li>
+						<li><a href="" onclick="show_others()">Otros</a></li>
+					</ul>
+				</div><!-- //filter_block -->
+
+                                <!-- filter_block -->
+                                <div class="row 25% no-collapse">
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-1.jpg" data-lightbox="alodeya" data-title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" class="image fit"><img src="images/gallery/edu-manazas-1-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" /></a>
+                                    </div>
+                                    <div class="3u tercios">
+                                        <a href="images/gallery/edu-manazas-2.jpg" data-lightbox="alodeya" data-title="3 Tercios Circo, Gala Payasos Sin Fronteras, Diciembre 2012, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-2-thumb.jpg" alt="3 Tercios Circo, Gala Payasos Sin Fronteras, Diciembre 2012, Foto de Mai Ibarguen" title="3 Tercios Circo, Gala Payasos Sin Fronteras, Diciembre 2012, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-3.jpg" data-lightbox="alodeya" data-title="Edu Manazas sesi&oacute;n con Mai Ibarg&uuml;en, Febrero 2015, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-3-thumb.jpg" alt="Edu Manazas sesi&oacute;n con Mai Ibarg&uuml;en, Febrero 2015, Foto de Mai Ibarguen" title="Edu Manazas sesi&oacute;n con Mai Ibarg&uuml;en, Febrero 2015, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-4.jpg" data-lightbox="alodeya" data-title="Artea Trapeciclos, Febrero 2015, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-4-thumb.jpg" alt="Artea Trapeciclos, Febrero 2015, Foto de Mai Ibarguen" title="Artea Trapeciclos, Febrero 2015, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-5.jpg" data-lightbox="alodeya" data-title="Alodey&aacute; Son Recuerdos, Abril 2015, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-5-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Abril 2015, Foto de Mai Ibarguen" title="Alodey&aacute; Son Recuerdos, Abril 2015, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-6.jpg" data-lightbox="alodeya" data-title="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-6-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" title="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-7.jpg" data-lightbox="alodeya" data-title="Medieval de Zaragoza con Nostraxladamus, Junio 2012, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-7-thumb.jpg" alt="Medieval de Zaragoza con Nostraxladamus, Junio 2012, Foto de Mai Ibarguen" title="Medieval de Zaragoza con Nostraxladamus, Junio 2012, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-8.jpg" data-lightbox="alodeya" data-title="Alodey&aacute; Son Recuerdos, Festival Acambalachous, Junio 2014, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-8-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Festival Acambalachous, Junio 2014, Foto de Mai Ibarguen" title="Alodey&aacute; Son Recuerdos, Festival Acambalachous, Junio 2014, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-9.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" class="image fit"><img src="images/gallery/edu-manazas-9-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-10.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Premio del Jurado Festival Off de Calle Octubre 2015" class="image fit"><img src="images/gallery/edu-manazas-10-thumb.jpg" alt="Alodey&aacute; Premio del Jurado Festival Off de Calle Octubre 2015" title="Alodey&aacute; Premio del Jurado Festival Off de Calle Octubre 2015" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-11.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Premio Creaciones al Mejor N&uacute;mero de Circo Aragon&eacute;s 2015" class="image fit"><img src="images/gallery/edu-manazas-11-thumb.jpg" alt="Alodey&aacute; Premio Creaciones al Mejor N&uacute;mero de Circo Aragon&eacute;s 2015" title="Alodey&aacute; Premio Creaciones al Mejor N&uacute;mero de Circo Aragon&eacute;s 2015" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-12.jpg" data-lightbox="alodeya" data-title="Alodey&aacute; Son Recuerdos, Abril 2015, Foto de Youtebo.es" class="image fit"><img src="images/gallery/edu-manazas-12-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Abril 2015, Foto de Youtebo.es" title="Alodey&aacute; Son Recuerdos, Abril 2015, Foto de Youtebo.es" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-13.jpg" data-lightbox="alodeya"  data-title="Expedici&oacute;n Payasos Sin Fronteras, Kathmandu-Nepal, Diciembre 2015" class="image fit"><img src="images/gallery/edu-manazas-13-thumb.jpg" alt="Expedici&oacute;n Payasos Sin Fronteras, Kathmandu-Nepal, Diciembre 2015" title="Expedici&oacute;n Payasos Sin Fronteras, Kathmandu-Nepal, Diciembre 2015" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-14.jpg" data-lightbox="alodeya"  data-title="Expedici&oacute;n Payasos Sin Fronteras, Campamento de refugiados de Chuchepatti-Nepal, Noviembre 2015" class="image fit"><img src="images/gallery/edu-manazas-14-thumb.jpg" alt="Expedici&oacute;n Payasos Sin Fronteras, Campamento de refugiados de Chuchepatti-Nepal, Noviembre 2015" title="Expedici&oacute;n Payasos Sin Fronteras, Campamento de refugiados de Chuchepatti-Nepal, Noviembre 2015" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-15.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Enero 2016, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-15-thumb.jpg" alt="Edu Manazas, Enero 2016, Foto de Mai Ibarguen" title="Edu Manazas, Enero 2016, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-16.jpg" data-lightbox="alodeya"  data-title="Expedici&oacute;n Payasos Sin Fronteras, Kathmandu-Nepal, Diciembre 2015, Foto Eloy" class="image fit"><img src="images/gallery/edu-manazas-16-thumb.jpg" alt="Expedici&oacute;n Payasos Sin Fronteras, Kathmandu-Nepal, Diciembre 2015, Foto Eloy" title="Expedici&oacute;n Payasos Sin Fronteras, Kathmandu-Nepal, Diciembre 2015, Foto Eloy" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-17.jpg" data-lightbox="alodeya"  data-title="Artea Trapeciclos, Febrero 2015, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-17-thumb.jpg" alt="Artea Trapeciclos, Febrero 2015, Foto de Mai Ibarguen" title="Artea Trapeciclos, Febrero 2015, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-18.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Enero 2016, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-18-thumb.jpg" alt="Edu Manazas, Enero 2016, Foto de Mai Ibarguen" title="Edu Manazas, Enero 2016, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-19.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Dinamarca, Junio 2011, Foto de Luis Sartori" class="image fit"><img src="images/gallery/edu-manazas-19-thumb.jpg" alt="Edu Manazas, Dinamarca, Junio 2011, Foto de Luis Sartori" title="Edu Manazas, Dinamarca, Junio 2011, Foto de Luis Sartori" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-20.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-20-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" title="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-21.jpg" data-lightbox="alodeya"  data-title="Artea Trapeciclos, Febrero 2015, Foto de Julio Marin" class="image fit"><img src="images/gallery/edu-manazas-21-thumb.jpg" alt="Artea Trapeciclos, Febrero 2015, Foto de Julio Marin" title="Artea Trapeciclos, Febrero 2015, Foto de Julio Marin" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-22.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Trento (Italia), Noviembre 2011, Foto de Simone Campara" class="image fit"><img src="images/gallery/edu-manazas-22-thumb.jpg" alt="Edu Manazas, Trento (Italia), Noviembre 2011, Foto de Simone Campara" title="Edu Manazas, Trento (Italia), Noviembre 2011, Foto de Simone Campara" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-23.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; '1, 2, 3 y...', Festival de Circo Ciudad de Zaragoza, Noviembre 2014, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-23-thumb.jpg" alt="Alodey&aacute; '1, 2, 3 y...', Festival de Circo Ciudad de Zaragoza, Noviembre 2014, Foto de Mai Ibarguen" title="Alodey&aacute; '1, 2, 3 y...', Festival de Circo Ciudad de Zaragoza, Noviembre 2014, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u tercios">
+                                        <a href="images/gallery/edu-manazas-24.jpg" data-lightbox="alodeya"  data-title="3 Tercios Circo, Festival Entrepayasaos Mayo 2013, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-24-thumb.jpg" alt="3 Tercios Circo, Festival Entrepayasaos Mayo 2013, Foto de Mai Ibarguen" title="3 Tercios Circo, Festival Entrepayasaos Mayo 2013, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-25.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Son Recuerdos, Enero 2014, Foto de Vir Varyuan" class="image fit"><img src="images/gallery/edu-manazas-25-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Enero 2014, Foto de Vir Varyuan" title="Alodey&aacute; Son Recuerdos, Enero 2014, Foto de Vir Varyuan" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-26.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Gala de Payasos Sin Fronteras, Diciembre 2013, Foto de Vir Varyuan" class="image fit"><img src="images/gallery/edu-manazas-26-thumb.jpg" alt="Edu Manazas, Gala de Payasos Sin Fronteras, Diciembre 2013, Foto de Vir Varyuan" title="Edu Manazas, Gala de Payasos Sin Fronteras, Diciembre 2013, Foto de Vir Varyuan" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-27.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-27-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" title="Alodey&aacute; Son Recuerdos, Noviembre 2014, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u tercios">
+                                        <a href="images/gallery/edu-manazas-28.jpg" data-lightbox="alodeya"  data-title="3 Tercios Circo, Festival Entrepayasaos Mayo 2013, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-28-thumb.jpg" alt="3 Tercios Circo, Festival Entrepayasaos Mayo 2013, Foto de Mai Ibarguen" title="3 Tercios Circo, Festival Entrepayasaos Mayo 2013, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-29.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Boulevard Canape Barbastro Septiembre 2015, Foto de Marta  Marco" class="image fit"><img src="images/gallery/edu-manazas-29-thumb.jpg" alt="Edu Manazas, Boulevard Canape Barbastro Septiembre 2015, Foto de Marta  Marco" title="Edu Manazas, Boulevard Canape Barbastro Septiembre 2015, Foto de Marta  Marco" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-30.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Evento con Nostraxladamus Octubre 2015" class="image fit"><img src="images/gallery/edu-manazas-30-thumb.jpg" alt="Edu Manazas, Evento con Nostraxladamus Octubre 2015" title="Edu Manazas, Evento con Nostraxladamus Octubre 2015" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-31.jpg" data-lightbox="alodeya"  data-title="Artea, Trapeciclos Julio 2015, Foto de Carlos J." class="image fit"><img src="images/gallery/edu-manazas-31-thumb.jpg" alt="Artea, Trapeciclos Julio 2015, Foto de Carlos J." title="Artea, Trapeciclos Julio 2015, Foto de Carlos J." /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-32.jpg" data-lightbox="alodeya"  data-title="Medieval de Zaragoza con Nostraxladamus, Junio 2012, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-32-thumb.jpg" alt="Medieval de Zaragoza con Nostraxladamus, Junio 2012, Foto de Mai Ibarguen" title="Medieval de Zaragoza con Nostraxladamus, Junio 2012, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-33.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Boulevard Canape Barbastro Septiembre 2015, Foto de Marta  Marco" class="image fit"><img src="images/gallery/edu-manazas-33-thumb.jpg" alt="Edu Manazas, Boulevard Canape Barbastro Septiembre 2015, Foto de Marta  Marco" title="Edu Manazas, Boulevard Canape Barbastro Septiembre 2015, Foto de Marta  Marco" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-34.jpg" data-lightbox="alodeya"  data-title="Artea, Trapeciclos Julio 2015, Foto de Carlos J." class="image fit"><img src="images/gallery/edu-manazas-34-thumb.jpg" alt="Artea, Trapeciclos Julio 2015, Foto de Carlos J." title="Artea, Trapeciclos Julio 2015, Foto de Carlos J." /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-35.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" class="image fit"><img src="images/gallery/edu-manazas-35-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-36.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" class="image fit"><img src="images/gallery/edu-manazas-36-thumb.jpg" alt="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" title="Alodey&aacute; Son Recuerdos, Festival Off de Calle Octubre 2015" /></a>
+                                    </div>
+                                    <div class="3u tercios">
+                                        <a href="images/gallery/edu-manazas-37.jpg" data-lightbox="alodeya"  data-title="3 Tercios Circo, Arag&oacute;n en Pista, Febrero 2015" class="image fit"><img src="images/gallery/edu-manazas-37-thumb.jpg" alt="3 Tercios Circo, Arag&oacute;n en Pista, Febrero 2015" title="3 Tercios Circo, Arag&oacute;n en Pista, Febrero 2015" /></a>
+                                    </div>
+                                    <div class="3u alodeya">
+                                        <a href="images/gallery/edu-manazas-38.jpg" data-lightbox="alodeya"  data-title="Alodey&aacute; '1, 2, 3 y...', Festival de Circo Ciudad de Zaragoza, Noviembre 2014, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-38-thumb.jpg" alt="Alodey&aacute; '1, 2, 3 y...', Festival de Circo Ciudad de Zaragoza, Noviembre 2014, Foto de Mai Ibarguen" title="Alodey&aacute; '1, 2, 3 y...', Festival de Circo Ciudad de Zaragoza, Noviembre 2014, Foto de Mai Ibarguen" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-39.jpg" data-lightbox="alodeya"  data-title="Expedici&oacute;n Payasos Sin Fronteras, Nuwakot-Nepal, Diciembre 2015" class="image fit"><img src="images/gallery/edu-manazas-39-thumb.jpg" alt="Expedici&oacute;n Payasos Sin Fronteras, Nuwakot-Nepal, Diciembre 2015" title="Expedici&oacute;n Payasos Sin Fronteras, Nuwakot-Nepal, Diciembre 2015" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-40.jpg" data-lightbox="alodeya"  data-title="Expedici&oacute;n Payasos Sin Fronteras, Orfanato Siphal-Nepal, Noviembre 2015" class="image fit"><img src="images/gallery/edu-manazas-40-thumb.jpg" alt="Expedici&oacute;n Payasos Sin Fronteras, Orfanato Siphal-Nepal, Noviembre 2015" title="Expedici&oacute;n Payasos Sin Fronteras, Orfanato Siphal-Nepal, Noviembre 2015" /></a>
+                                    </div>
+                                    <div class="3u tercios">
+                                        <a href="images/gallery/edu-manazas-41.jpg" data-lightbox="alodeya"  data-title="3 Tercios Circo sesi&oacute;n de fotos, Agosto 2012" class="image fit"><img src="images/gallery/edu-manazas-41-thumb.jpg" alt="3 Tercios Circo sesi&oacute;n de fotos, Agosto 2012" title="3 Tercios Circo sesi&oacute;n de fotos, Agosto 2012" /></a>
+                                    </div>
+                                    <div class="3u manazas">
+                                        <a href="images/gallery/edu-manazas-42.jpg" data-lightbox="alodeya"  data-title="Edu Manazas, Gala de la Convenci&oacute;n de Malabaristas de Trento (Italia), Junio 2013" class="image fit"><img src="images/gallery/edu-manazas-42-thumb.jpg" alt="Edu Manazas, Gala de la Convenci&oacute;n de Malabaristas de Trento (Italia), Junio 2013" title="Edu Manazas, Gala de la Convenci&oacute;n de Malabaristas de Trento (Italia), Junio 2013" /></a>
+                                    </div>
+                                    <div class="3u others">
+                                        <a href="images/gallery/edu-manazas-43.jpg" data-lightbox="alodeya"  data-title="Taller de malabares de Edu Manazas, Enero 2016, Foto de Julio Marin" class="image fit"><img src="images/gallery/edu-manazas-43-thumb.jpg" alt="Taller de malabares de Edu Manazas, Enero 2016, Foto de Julio Marin" title="Taller de malabares de Edu Manazas, Enero 2016, Foto de Julio Marin" /></a>
+                                    </div>
+                                    <div class="3u tercios">
+                                        <a href="images/gallery/edu-manazas-44.jpg" data-lightbox="alodeya"  data-title="3 Tercios Circo, Gala Payasos Sin Fronteras, Diciembre 2012, Foto de Mai Ibarguen" class="image fit"><img src="images/gallery/edu-manazas-44-thumb.jpg" alt="3 Tercios Circo, Gala Payasos Sin Fronteras, Diciembre 2012, Foto de Mai Ibarguen" title="3 Tercios Circo, Gala Payasos Sin Fronteras, Diciembre 2012, Foto de Mai Ibarguen" /></a>
+                                    </div>
+
+
+                                </div>
+                            </section>
+                            <!-- Videos -->
+                            <div id="video_edu" style="display: none;" >
+                                <div class="js-video [vimeo, widescreen]" >
+                                    <iframe width="700" height="393" src="http://www.youtube.com/embed/3G9BIOssKks" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="js-video [vimeo, widescreen]" >
+                                    <iframe width="700" height="393" src="http://www.youtube.com/embed/_WeRc2CUQyg" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="js-video [vimeo, widescreen]" >
+                                    <iframe width="700" height="393" src="http://www.youtube.com/embed/nMrNYy4mojw" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                        </div> <!-- div class 12u -->
+                    </div> <!-- div class row -->
+            </article>
+        </div> <!-- div wrapper style4 -->
+        <div class="line"></div>    
+        <!-- Contact -->
+        <div class="wrapper style5">
+            <ul id="contact">                                                        
+                <li>
+                    <h2 class="icon fa-envelope-o circled"><span class="label">Mail</span></h2>
+                    <a class="email" href="mailto:edumanazas@gmail.com">edumanazas&#64;gmail.com</a></li>
+                <li>
+                    <h2 class="icon fa-facebook-official circled"><span class="label">Facebook</span></h2>
+                    Eduardo Manazas
+                </li>
+                <li>
+                    <h2 class="icon fa-phone-square circled"><span class="label">Phone</span></h2>
+                    (+34)627622744
+                </li>
+            </ul>
+        </div> <!-- div wrapper style5 -->
+        <div class="lineBlack">
+            <div class="container">
+		<div class="row downLine">
+                    <div class="col-md-6 text-left copy">
+			<p>Copyright &copy; Edu Manazas. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-right dm">
+                        <ul id="downMenu">                                                        
+                            <li><a href="#top" class="active">Edu</a></li>
+                            <li><a href="bio.html" >Bio</a></li>
+                            <li><a href="shows.html" >Shows</a></li>
+                            <li class="active"><a href="multimedia.html" >Multimedia</a></li>
+                            <li><a href="calendar.html" >Calendar</a></li>
+                            <li class="last"><a href="#contact" >Contact</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- div downLine -->
+            </div> <!-- div container -->
+        </div> <!-- div lineBlack -->
+    </body>
+</html>
