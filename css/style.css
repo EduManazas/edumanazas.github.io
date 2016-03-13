@@ -1585,3 +1585,29 @@
 #p_init{
     margin-bottom: 30px;
 }
+
+.main_bio {
+    width: 50%;
+}
+
+#image_bio {
+    width: 50%;
+}
+
+@media screen and (max-width: 740px) {
+    .main_bio {
+        width: 100%;
+    } 
+    
+    #main {
+        margin-left: 20%;
+    } 
+     
+    .line_bio {
+        width: 0%;
+    } 
+    
+    #image_bio img {
+        display: none;
+    }
+}
