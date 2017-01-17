@@ -45,6 +45,14 @@
                     $('#2015').show();
                 }
             }
+            show_2016 = function() {
+                if ($('#2016').is(":visible")) {
+                    $('#2016').hide();
+                }
+                else {
+                    $('#2016').show();
+                }
+            }
         </script>
     </head>
     <body>
@@ -65,12 +73,57 @@
                 <section id="calendar">
                     <div id="options" class="col-md-12" style="text-align: center;">	
                         <ul id="filter" class="option-set" data-option-key="filter">
-                            <li><a class="selected" href="" >2016</a></li>
+                            <li><a class="selected" href="" >2017</a></li>
                         </ul>
                     </div><!-- //filter_block_year -->
                         
                     <!-- Calendar -->
-                    <div id="2016"> 
+                    <div id="2017"> 
+                        <div class="row">
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Febrero</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Feb <strong>04-05</strong></span>
+                                        <h3><a  >Alodey&aacute; Circo Danza</a></h3>
+                                        <p>Son recuerdos, Teatro Arbol&eacute;</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Marzo</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Mar <strong>22</strong></span>
+                                        <h3><a  >Edu Manazas</a></h3>
+                                        <p>Fuera de Stock (corto), Magdalena Circus, Castell&oacute;n</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Abril</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Apr <strong>18-21</strong></span>
+                                        <h3><a  >Alodey&aacute; Circo Danza</a></h3>
+                                        <p>Son recuerdos, Conexiones con el Teatro del Mercado</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div id="options" class="col-md-12" style="text-align: center;">	
+                        <ul id="filter" class="option-set" data-option-key="filter">
+                            <li><a class="selected" href="" onclick="show_2016()">2016</a></li>
+                        </ul>
+                    </div><!-- //filter_block_year -->
+                    <div id="2016" style="display:none"> 
                         <div class="row">
                             <div class="3u">
 				<header>
