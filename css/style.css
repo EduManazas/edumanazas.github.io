@@ -1582,6 +1582,112 @@
     margin-bottom: 5px;
 }
 
+.press_div {
+    float: left;
+    width: 31%;
+		padding: 1%;
+		background: #ffffff;
+		border-radius: 8px;
+		cursor: default;
+		opacity: 0.95;
+		text-align: center;
+		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+		transition: opacity 1s ease, transform 1s ease;
+                margin: 1%;
+} 
+
+@media screen and (max-width: 1000px) {
+    .press_div {
+        width: 48%;
+        padding: 2%;
+        margin: 1%;
+    } 
+}
+
+@media screen and (max-width: 590px) {
+    .press_div {
+        width: 95%;
+        padding: 4%;
+        margin: 2%;
+    } 
+}
+
+#wrapper_press {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: inline-block;
+    perspective: 1000px;
+    position: relative;
+    min-height: 100%;
+    padding: 1.5em 5%;
+    z-index: 2;
+    background-color: #0A83AB;
+    margin-top: 40px;
+}
+    #wrapper_press > * {
+        z-index: 1;
+    }
+
+    #wrapper_press:before {
+        content: '';
+        display: block;
+    }
+
+    @media screen and (max-width: 360px) {
+
+        #wrapper_press {
+            padding: 0.75em;
+        }
+
+    }
+
+    body.is-ie #wrapper_press {
+        height: 100%;
+    }
+                
+    #wrapper_press p {
+        font-size: 11pt;
+        color: #888;
+        padding: 0 10px;
+    }
+                
+    #wrapper_press div {
+        display:inline;
+    }
+
+#main_press {
+        text-align:center;     
+}
+
+#main_press a{
+        color: #888;
+        margin: 0 5px; 
+}
+
+#main_press a:hover{
+        color: #0A83AB; 
+}
+
+#main_press h1{
+        text-align:center;
+        margin: 0 auto 20px;
+        font-size: 20px; 
+}
+
+#main_press img{
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+}
+
+.press_div .header{
+    margin-bottom: 5px;
+}
+
 #p_init{
     margin-bottom: 30px;
 }
