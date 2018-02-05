@@ -53,6 +53,14 @@
                     $('#2016').show();
                 }
             }
+            show_2017 = function() {
+                if ($('#2017').is(":visible")) {
+                    $('#2017').hide();
+                }
+                else {
+                    $('#2017').show();
+                }
+            }
         </script>
     </head>
     <body>
@@ -74,12 +82,57 @@
                 <section id="calendar">
                     <div id="options" class="col-md-12" style="text-align: center;">	
                         <ul id="filter" class="option-set" data-option-key="filter">
-                            <li><a class="selected" href="" >2017</a></li>
+                            <li><a class="selected" href="" >2018</a></li>
                         </ul>
                     </div><!-- //filter_block_year -->
                         
                     <!-- Calendar -->
-                    <div id="2017"> 
+                    <div id="2018"¼> 
+                        <div class="row">
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Febrero</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Feb <strong>03-04</strong></span>
+                                        <h3><a  >Edu Manazas</a></h3>
+                                        <p>La Cuna del Cierzo</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Abril</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Apr <strong>23</strong></span>
+                                        <h3><a  >Edu Manazas</a></h3>
+                                        <p>Fuera de Stock, Cuevas de Almud&eacute;n</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Junio</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Jun <strong>22</strong></span>
+                                        <h3><a  >Edu Manazas</a></h3>
+                                        <p>Fuera de Stock, Fest&iacute;n, Ibiza</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div id="options" class="col-md-12" style="text-align: center;">	
+                        <ul id="filter" class="option-set" data-option-key="filter">
+                            <li><a class="selected" href="" onclick="show_2017()">2017</a></li>
+                        </ul>
+                    </div><!-- //filter_block_year -->    
+                    <div id="2017" style="display:none"> 
                         <div class="row">
                             <div class="3u">
 				<header>
@@ -369,7 +422,7 @@
 				</header>
                                 <ul class="dates">
                                     <li>
-                                        <span class="date">Sept <strong>07</strong></span>
+                                        <span class="date">Oct <strong>07</strong></span>
                                         <h3><a  >Nostraxladamus</a></h3>
                                         <p>Preg&oacute;n, Zaragoza</p>
                                     </li>
@@ -389,7 +442,33 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>                        
+                            <div class="3u">
+				<header>
+                                    <h2><span class="label">Diciembre</span></h2>
+				</header>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Dec <strong>16</strong></span>
+                                        <h3><a  >Alodey&aacute; Circo Danza</a></h3>
+                                        <p>Caixa Forum, Zaragoza</p>
+                                    </li>
+                                </ul>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Dec <strong>29</strong></span>
+                                        <h3><a  >Alodey&aacute; Circo Danza</a></h3>
+                                        <p>Guirigay, Huesca</p>
+                                    </li>
+                                </ul>
+                                <ul class="dates">
+                                    <li>
+                                        <span class="date">Dec <strong>1-22</strong></span>
+                                        <h3><a  >Edu Manazas</a></h3>
+                                        <p>Laboratorio Haztegia, Bilbao</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                      
                     </div>
                     <div id="options" class="col-md-12" style="text-align: center;">	
                         <ul id="filter" class="option-set" data-option-key="filter">
